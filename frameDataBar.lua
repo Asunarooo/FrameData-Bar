@@ -3,8 +3,6 @@ local framedata_bar_selector = 0
 
 framedata_bar_button = {
 		text = "Framedata Bar",
-		x = 8,
-		y = determineButtonYPos(addonpage),
 		olcolour = "black",
 		func =	function()
 				framedata_bar_selector = framedata_bar_selector + 1
@@ -20,7 +18,7 @@ framedata_bar_button = {
 				end
 			end,
 	}
-table.insert(addonpage, framedata_bar_button)
+insertAddonButton(framedata_bar_button)
 ------------------------
 -- Initialization
 ------------------------
